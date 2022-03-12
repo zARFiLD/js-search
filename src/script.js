@@ -2,7 +2,7 @@ let cards = document.querySelectorAll('.box')
     
 function liveSearch() {
     let search_query = document.getElementById("searchbox").value;
-    window.location.href = "stoneminers.github.io/js-search/src/?q=" + search_query;
+    window.location.href = "/?q=" + search_query;
     
     //Use innerText if all contents are visible
     //Use textContent for including hidden elements
