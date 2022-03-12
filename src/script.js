@@ -2,7 +2,6 @@ let cards = document.querySelectorAll('.box')
     
 function liveSearch() {
     let search_query = document.getElementById("searchbox").value;
-    window.location.href = "/?q=" + search_query;
     
     //Use innerText if all contents are visible
     //Use textContent for including hidden elements
@@ -10,6 +9,7 @@ function liveSearch() {
         if(cards[i].textContent.toLowerCase()
                 .includes(search_query.toLowerCase())) {
             cards[i].classList.remove("is-hidden");
+            location.href = "https://stoneminers.github.io/js-search/src/?q=" + search_query;
         } else {
             cards[i].classList.add("is-hidden");
         }
